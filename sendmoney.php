@@ -34,7 +34,7 @@ include_once('components/header.php');
       <h2 class="text-xl font-semibold mb-4">Current Balance</h2>
       <div>
         <p class="text-sm">As of <?= date('M d, Y ') ?></p>
-        <p class="text-4xl font-bold">&#8369;10,254.<span class="text-2xl">50</span></p>
+        <p class="text-4xl font-bold">&#8369;80,254.<span class="text-2xl">50</span></p>
         <div class="mt-4 text-sm">
           <p>**** 123-456-7890</p>
           <p class="mt-1">May 2028</p>
