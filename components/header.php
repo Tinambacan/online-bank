@@ -11,7 +11,7 @@
   <title>SunnySideUP Bank</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet"/>
 </head>
-<body class="min-h-screen flex flex-col" style="background-color: #F2F2F2;">
+<body class="min-h-screen flex flex-col bg-gray-100">
 
   <!-- Header -->
   <header class="py-4 px-6 shadow-md" style="background:linear-gradient(to right, #FF3B30, #FF9500);">
