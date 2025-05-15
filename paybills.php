@@ -10,12 +10,8 @@ include_once('components/header.php');
   <title>Payment Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 p-6">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-3 gap-6">
-      
     <!-- code for credit card -->
-      <div class="bg-gradient-to-r from-orange-500 to-pink-400 text-white rounded-2xl p-6 shadow-lg">
+      <div class="text-white rounded-2xl p-6 shadow-lg max-w-sm w-full" style="background:linear-gradient(to right, #FF3B30, #FF9500);">
         <h2 class="text-xl font-semibold mb-4">Current Balance</h2>
         <div>
           <p class="text-sm">Total Balance</p>
@@ -26,7 +22,7 @@ include_once('components/header.php');
           </div>
         </div>
       </div>
-
+  
 <?php 
 include_once('components/footer.php');
 ?>
