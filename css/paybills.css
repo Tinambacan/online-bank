@@ -1,0 +1,7 @@
+.merchant-hover {
+    transition: background-color 0.3s ease;
+  }
+
+  .merchant-hover:hover {
+    background-color: #fb923c; /* Tailwind's bg-orange-400 */
+  }

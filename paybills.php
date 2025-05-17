@@ -9,6 +9,7 @@ include_once('components/header.php');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payment Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link href="css/paybills.css" rel="stylesheet">
 </head>
 
 <!-- Breadcrumbs -->
@@ -29,8 +30,11 @@ include_once('components/header.php');
 </nav>
 <br>
 
-  <!--Credit Card -->
-    <div class="text-white rounded-2xl p-6 shadow-lg max-w-sm w-full" style="background:linear-gradient(to right, #FF3B30, #FF9500);">
+<div class="">
+<div class="grid grid-cols-3 gap-6">
+
+  <!-- Credit Card -->
+    <div class="text-white rounded-2xl p-6 shadow-lg max-w-sm w-full" style="background:linear-gradient(to right, #FF3B30, #FF9500); height: 200px;">
       <h2 class="text-xl font-semibold mb-4">Current Balance</h2>
       <div>
         <p class="text-sm">As of <?= date('M d, Y ') ?></p>
@@ -41,8 +45,51 @@ include_once('components/header.php');
         </div>
       </div>
     </div>
-    
-  
+
+<!-- Center: Merchants Grid -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Merchants</h2>
+        <div class="mb-4">
+          <input type="text" placeholder="Search merchants..." class="w-full px-4 py-2 border rounded-full shadow-sm">
+        </div>
+        <div id="merchantGrid" class="grid grid-cols-4 gap-4">
+        <!-- JavaScript will insert cards here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id= "merchant-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-md relative">
+      <h2 id="paymentTitle" class="text-xl font-semibold mb-4">Payment Details</h2>
+
+      <!-- Input fields -->
+      <div class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Amount</label>
+          <input type="text" class="w-full px-3 py-2 border rounded-lg" placeholder="Enter amount">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Account Number</label>
+          <input type="text" class="w-full px-3 py-2 border rounded-lg" placeholder="Enter account number">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" class="w-full px-3 py-2 border rounded-lg" placeholder="Enter email">
+        </div>
+      </div>
+
+       <button class="open-modal px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-center mt-5">
+        Confirm
+      </button>
+
+      <!-- Close button -->
+      <button class="close-modal absolute top-2 right-2 text-gray-500 hover:text-black text-xl">&times;</button>
+    </div>
+  </div>
+
+  <script src="js/paybills.js"> </script>
+
 <?php 
 include_once('components/footer.php');
 ?>
