@@ -9,22 +9,23 @@
 <body class="min-h-screen flex flex-col bg-gray-100">
 
   <!-- Header -->
-  <header class="py-4 px-6 shadow-md" style="background:linear-gradient(to right, #FF3B30, #FF9500);">
+  <header class="py-2 px-6 shadow-md" style="background:linear-gradient(to right, #FF3B30, #FF9500);">
     <div class="flex items-center justify-between">
-      
-
+    
   <!-- Logo | Navigation Links -->
     <div class="flex items-center">
-      <img src="assets/logo.png" alt="Logo" class="h-14 w-14 rounded-full bg-white p-1"/>
-    
-    <nav class="hidden md:block ml-8">
-      <ul class="flex space-x-6">
-        <li><a href="#" class="text-white font-semibold hover:text-gray">Home</a></li>
-        <li><a href="paybills.php" class="text-white font-semibold hover:text-gray">Pay Bills</a></li>
-        <li><a href="sendmoney.php" class="text-white font-semibold hover:text-gray">Send Money</a></li>
-        <li><a href="#" class="text-white font-semibold hover:text-gray">Transaction History</a></li>    
-      </ul>
-    </nav>
+      <div class="flex flex-col items-center">
+        <img src="assets/logo.png" alt="Logo" class="h-14 w-14 rounded-full bg-white p-1"/>
+        <span class="text-white font-bold text-sm mt-1">SunnySideUP</span>
+      </div>
+      <nav class="hidden md:block ml-8">
+        <ul class="flex space-x-6">
+          <li><a href="#" class="text-white font-semibold hover:text-gray">Home</a></li>
+          <li><a href="paybills.php" class="text-white font-semibold hover:text-gray">Pay Bills</a></li>
+          <li><a href="sendmoney.php" class="text-white font-semibold hover:text-gray">Send Money</a></li>
+          <li><a href="#" class="text-white font-semibold hover:text-gray">Transaction History</a></li>    
+        </ul>
+      </nav>
     </div>
 
   <!-- User Profile & Logout --> 
