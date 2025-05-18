@@ -30,11 +30,10 @@ include_once('components/header.php');
 </nav>
 <br>
 
-<div class="">
-<div class="grid grid-cols-3 gap-6">
-
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
   <!-- Credit Card -->
-    <div class="text-white rounded-2xl p-6 shadow-lg max-w-sm w-full" style="background:linear-gradient(to right, #FF3B30, #FF9500); height: 200px;">
+  <div class="max-w-sm w-full space-y-4">
+    <div class="text-white rounded-2xl p-6 shadow-lg" style="background:linear-gradient(to right, #FF3B30, #FF9500);">
       <h2 class="text-xl font-semibold mb-4">Current Balance</h2>
       <div>
         <p class="text-sm">As of <?= date('M d, Y ') ?></p>
@@ -45,21 +44,30 @@ include_once('components/header.php');
         </div>
       </div>
     </div>
-
-<!-- Center: Merchants Grid -->
-      <div class="border-0 border-[#ccc]">
-        <h2 class="text-xl font-semibold mb-4">Merchants</h2>
-        <div class="mb-4">
-          <input type="text" placeholder="Search merchants..." class="w-full px-4 py-2 border rounded-full shadow-sm">
-        </div>
-        <div id="merchantGrid" class="grid grid-cols-4 gap-4" style="height: 450px; overflow-y: scroll;">
-        <!-- JavaScript will insert cards here -->
-        </div>
-      </div>
+    <!-- Gray Container for ads-->
+    <div class="bg-gray-200 rounded-2xl p-4 shadow text-gray-700 " style="height: 280px;">
+    
     </div>
   </div>
 
-  <div id= "merchant-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <!-- Center: Merchants Grid -->
+  <div class="border-0 border-[#ccc]">
+    <h2 class="text-xl font-semibold mb-4">Merchants</h2>
+    <div class="mb-4">
+      <input type="text" placeholder="Search merchants..." class="w-full px-4 py-2 border rounded-full shadow-sm">
+    </div>
+    <div id="merchantGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 overflow-y-scroll" style="height: 450px; overflow-y: scroll;">
+      <!-- JavaScript will insert cards here -->
+    </div>
+  </div>
+  <!-- Gray Container for ads-->
+  <div class="bg-gray-200 rounded-2xl p-4 shadow text-gray-700 h-full">
+
+  </div>
+</div>
+
+
+<div id= "merchant-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-md relative">
       <h2 id="paymentTitle" class="text-xl font-semibold mb-4">Payment Details</h2>
 
@@ -88,9 +96,9 @@ include_once('components/header.php');
       <!-- Close button -->
       <button class="close-modal absolute top-2 right-2 text-gray-500 hover:text-black text-xl">&times;</button>
     </div>
-  </div>
+</div>
 
-  <script src="js/paybills.js"> </script>
+<script src="js/paybills.js"> </script>
 
 <?php 
 include_once('components/footer.php');
