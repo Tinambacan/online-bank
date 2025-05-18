@@ -23,7 +23,7 @@ include_once('components/header.php');
         <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
         </svg>
-        <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Pay Bills</a>
+        <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Send Money</a>
       </div>
     </li>
   </ol>
@@ -38,7 +38,7 @@ include_once('components/header.php');
       <h2 class="text-xl font-semibold mb-4">Current Balance</h2>
       <div>
         <p class="text-sm">As of <?= date('M d, Y ') ?></p>
-        <p class="text-4xl font-bold">&#8369;10,254.<span class="text-2xl">50</span></p>
+        <p class="text-4xl font-bold">&#8369;20,254.<span class="text-2xl">50</span></p>
         <div class="mt-4 text-sm">
           <p>**** 123-456-7890</p>
           <p class="mt-1">May 2028</p>
@@ -48,7 +48,7 @@ include_once('components/header.php');
 
 <!-- Center: Merchants Grid -->
       <div style="height: 580px; overflow-y: scroll; border: 0px solid #ccc;">
-        <h2 class="text-xl font-semibold mb-4">Merchants</h2>
+        <h2 class="text-xl font-semibold mb-4">Partner Banks</h2>
         <div class="mb-4">
           <input type="text" placeholder="Search merchants..." class="w-full px-4 py-2 border rounded-full shadow-sm">
         </div>
@@ -88,7 +88,7 @@ include_once('components/header.php');
     </div>
   </div>
 
-  <script src="js/paybills.js"> </script>
+  <script src="js/sendmoney.js"> </script>
 
 <?php 
 include_once('components/footer.php');

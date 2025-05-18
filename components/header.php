@@ -1,8 +1,3 @@
-<!-- <?php
- session_start();
- $profID = $_SESSION['#'];
-?> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,8 +20,8 @@
     <nav class="hidden md:block ml-8">
       <ul class="flex space-x-6">
         <li><a href="#" class="text-white font-semibold hover:text-gray">Home</a></li>
-        <li><a href="#" class="text-white font-semibold hover:text-gray">Pay Bills</a></li>
-        <li><a href="#" class="text-white font-semibold hover:text-gray">Send Money</a></li>
+        <li><a href="paybills.php" class="text-white font-semibold hover:text-gray">Pay Bills</a></li>
+        <li><a href="sendmoney.php" class="text-white font-semibold hover:text-gray">Send Money</a></li>
         <li><a href="#" class="text-white font-semibold hover:text-gray">Transaction History</a></li>    
       </ul>
     </nav>
@@ -38,7 +33,7 @@
     <div class="font-bold">Member's Name</div>
     <div class="text-sm">New User</div>
   </div>
-    <img src="assets/profile.jpg" alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-white" />
+    <img src="assets/defaultprofile.svg" alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-white" />
       <a href="logout.php" title="Logout" class="text-white text-2xl hover:text-gray-200">⟲</a>
    </div>
  
