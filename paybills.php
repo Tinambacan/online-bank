@@ -47,7 +47,7 @@ include_once('components/header.php');
     </div>
 
 <!-- Center: Merchants Grid -->
-      <div>
+      <div style="height: 580px; overflow-y: scroll; border: 0px solid #ccc;">
         <h2 class="text-xl font-semibold mb-4">Merchants</h2>
         <div class="mb-4">
           <input type="text" placeholder="Search merchants..." class="w-full px-4 py-2 border rounded-full shadow-sm">
