@@ -47,12 +47,12 @@ include_once('components/header.php');
     </div>
 
 <!-- Center: Merchants Grid -->
-      <div style="height: 580px; overflow-y: scroll; border: 0px solid #ccc;">
+      <div class="border-0 border-[#ccc]">
         <h2 class="text-xl font-semibold mb-4">Partner Banks</h2>
         <div class="mb-4">
           <input type="text" placeholder="Search merchants..." class="w-full px-4 py-2 border rounded-full shadow-sm">
         </div>
-        <div id="merchantGrid" class="grid grid-cols-4 gap-4">
+        <div id="merchantGrid" class="grid grid-cols-4 gap-4" style="height: 450px; overflow-y:scroll;">
         <!-- JavaScript will insert cards here -->
         </div>
       </div>
@@ -79,9 +79,11 @@ include_once('components/header.php');
         </div>
       </div>
 
-       <button class="open-modal px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-center mt-5">
-        Confirm
-      </button>
+       <div class="flex justify-center mt-5">
+        <button class="open-modal px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          Confirm
+        </button>
+      </div>
 
       <!-- Close button -->
       <button class="close-modal absolute top-2 right-2 text-gray-500 hover:text-black text-xl">&times;</button>
